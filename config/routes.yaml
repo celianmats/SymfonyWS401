@@ -3,3 +3,11 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+index_route:
+    path: /
+    controller: App\Controller\HomeController::index
+
+app_message:
+    path: '/api/messages'
+    controller: 'App\Controller\MessageController::index'
